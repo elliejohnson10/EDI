@@ -1,4 +1,8 @@
 //create a program that enables us to customize the number of squares in a grid
+let gif;
+function preload (){
+  gif = loadImage ('assets/AIBG.gif');
+}
 
 function setup() { //runs once
 createCanvas (windowWidth, windowWidth); //creates a canvas 720x720
@@ -14,10 +18,7 @@ var sideLen = windowWidth/num; //side length variable
 
 for (var y = 0; y < windowWidth; y= y + sideLen){
   for (var x=0; x < windowWidth; x= x + sideLen) {
-  quad (x,y,
-        x + sideLen,y,
-        x + sideLen,y + sideLen,
-        x,y + sideLen);
+image (gif, x, y, windowWidth/num, windowWidth/num);
   }
 }
 }
