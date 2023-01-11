@@ -13,6 +13,8 @@ function draw() { //runs in a loop
 fill (150, 225, 250); //fills shape w RGB color
 strokeWeight (1); //assigns stroke weight
 
+background ('sky blue');
+
 var num = 20; //number of sides in the array
 var sideLen = windowWidth/num; //side length variable
 
